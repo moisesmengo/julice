@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julice - Cardápio</title>
+    <meta
+      name="description"
+      content="Há 11 anos um cantinho da França em São Paulo."
+    />
+    <meta name="keywords" content="França, Padaria, São Paulo" />
+
+    <link rel="stylesheet" href="assets/css/cardapio.css" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="conteudo-mobile">
+        <div class="container">
+          <a href="index.html" class="logo-mobile">
+            <img src="assets/img/logo.png" class="img" alt="julice" />
+          </a>
+
+          <button class="btn-mobile" data-menu="button">
+            <span class="hamburgger"></span>
+          </button>
+        </div>
+        <div class="adereco-mobile"></div>
+        <nav class="mobile_menu" data-menu="lista">
+          <ul>
+            <li><a href="padaria.html">Padaria</a></li>
+            <li><a href="">Cestas e Presentes</a></li>
+            <li><a href="">Compras On-line</a></li>
+            <li><a href="cardapio.html" class="ativo">Cardápio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <div class="sociais">
+            <span class="whats"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1827_37)">
+                  <path
+                    d="M9.04011 7.62999C8.86011 7.53999 8.68011 7.45999 8.50011 7.36999C8.41011 7.32999 8.32011 7.28999 8.23011 7.25999C8.14011 7.21999 8.10011 7.23999 8.04011 7.30999C7.93011 7.43999 7.83011 7.56999 7.72011 7.70999C7.68011 7.75999 7.62011 7.77999 7.55011 7.75999C7.51011 7.73999 7.46011 7.71999 7.42011 7.69999C7.11011 7.56999 6.83011 7.38999 6.59011 7.14999C6.47011 7.03999 6.36011 6.90999 6.27011 6.76999C6.21011 6.68999 6.16011 6.60999 6.11011 6.51999C6.08011 6.46999 6.09011 6.41999 6.13011 6.37999C6.16011 6.33999 6.20011 6.29999 6.23011 6.25999C6.30011 6.17999 6.37011 6.10999 6.41011 6.00999C6.44011 5.94999 6.44011 5.89999 6.41011 5.83999C6.31011 5.61999 6.22011 5.38999 6.13011 5.16999C6.10011 5.09999 6.08011 5.02999 6.03011 4.96999C6.00011 4.92999 5.97011 4.90999 5.93011 4.90999C5.88011 4.90999 5.82011 4.90999 5.77011 4.90999V4.89999C5.74011 4.89999 5.70011 4.89999 5.67011 4.89999C5.59011 4.89999 5.52011 4.91999 5.47011 4.96999C5.40011 5.02999 5.34011 5.08999 5.29011 5.14999C5.09011 5.38999 5.02011 5.67999 5.05011 5.98999C5.07011 6.16999 5.13011 6.32999 5.21011 6.49999C5.28011 6.64999 5.37011 6.78999 5.47011 6.91999C5.61011 7.09999 5.74011 7.27999 5.90011 7.43999C6.04011 7.59999 6.20011 7.75999 6.37011 7.88999C6.57011 8.04999 6.78011 8.19999 7.01011 8.31999C7.20011 8.41999 7.40011 8.48999 7.60011 8.55999C7.77011 8.61999 7.94011 8.66999 8.12011 8.67999C8.23011 8.67999 8.35011 8.67999 8.46011 8.64999C8.62011 8.60999 8.77011 8.52999 8.90011 8.41999C8.98011 8.35999 9.05011 8.28999 9.09011 8.18999C9.14011 8.04999 9.17011 7.90999 9.17011 7.75999C9.17011 7.71999 9.15011 7.68999 9.12011 7.66999C9.09011 7.65999 9.07011 7.63999 9.04011 7.62999Z"
+                    fill="#C5043C"
+                  />
+                  <path
+                    d="M13.04 4.15C12.68 3.32 12.2 2.6 11.59 1.99C10.98 1.38 10.26 0.89 9.43 0.54C8.6 0.18 7.72 0 6.79 0C5.86 0 4.98 0.18 4.16 0.53C3.33 0.89 2.61 1.37 1.99 1.98C1.37 2.6 0.89 3.32 0.53 4.15C0.18 4.98 0 5.86 0 6.79C0 7.72 0.18 8.6 0.53 9.42C0.89 10.24 1.37 10.96 1.99 11.58C2.61 12.2 3.33 12.69 4.15 13.04C4.97 13.4 5.85 13.57 6.78 13.57C7.71 13.57 8.59 13.39 9.42 13.04C10.25 12.68 10.97 12.2 11.58 11.58C12.19 10.96 12.68 10.24 13.03 9.42C13.39 8.6 13.56 7.72 13.56 6.79C13.58 5.86 13.4 4.98 13.04 4.15ZM11.01 7.36C10.97 7.61 10.91 7.85 10.83 8.09C10.69 8.49 10.49 8.86 10.23 9.2C10.06 9.42 9.86 9.63 9.64 9.81C9.38 10.03 9.1 10.21 8.79 10.36C8.47 10.51 8.14 10.62 7.79 10.68C7.52 10.73 7.25 10.75 6.98 10.74C6.59 10.73 6.21 10.66 5.84 10.54C5.64 10.47 5.44 10.39 5.25 10.29C5.24 10.28 5.22 10.28 5.21 10.28C4.93 10.35 4.64 10.42 4.36 10.49C4.03 10.57 3.7 10.65 3.38 10.73C3.27 10.76 3.17 10.7 3.16 10.58C3.16 10.54 3.17 10.5 3.18 10.46C3.32 9.95 3.47 9.44 3.61 8.93C3.63 8.87 3.64 8.81 3.66 8.75C3.66 8.74 3.66 8.72 3.65 8.71C3.53 8.48 3.42 8.24 3.34 7.99C3.28 7.79 3.23 7.59 3.2 7.39C3.17 7.16 3.15 6.93 3.16 6.7C3.17 6.56 3.17 6.42 3.19 6.29C3.22 6.07 3.27 5.85 3.33 5.63C3.44 5.26 3.61 4.91 3.83 4.59C4.01 4.32 4.22 4.08 4.46 3.86C4.75 3.6 5.07 3.38 5.43 3.22C5.71 3.08 6 2.98 6.31 2.92C6.47 2.89 6.63 2.87 6.78 2.85C6.89 2.84 7 2.84 7.06 2.84C7.33 2.84 7.55 2.86 7.77 2.9C8.04 2.94 8.3 3.02 8.56 3.12C8.91 3.26 9.24 3.45 9.54 3.68C9.69 3.8 9.83 3.92 9.96 4.06C10.18 4.29 10.36 4.53 10.52 4.8C10.72 5.14 10.87 5.51 10.95 5.9C10.98 6.04 11 6.19 11.02 6.34C11.05 6.52 11.05 6.7 11.05 6.87C11.05 7.04 11.04 7.2 11.01 7.36Z"
+                    fill="#C5043C"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1827_37">
+                    <rect width="13.58" height="13.58" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Fale conosco pelo Whatsapp</span
+            >
+            <span class="tel">11 9 9430 4012</span>
+            <span class="tel">11 3097 9162</span>
+            <span class="insta"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.71 0C7.63 0 8.5 0.18 9.32 0.53C10.14 0.88 10.85 1.36 11.46 1.97C12.07 2.58 12.54 3.29 12.9 4.11C13.26 4.93 13.43 5.8 13.43 6.72C13.43 7.64 13.25 8.51 12.9 9.32C12.55 10.13 12.07 10.85 11.46 11.46C10.85 12.07 10.14 12.55 9.32 12.91C8.5 13.26 7.63 13.44 6.71 13.44C5.79 13.44 4.92 13.26 4.11 12.91C3.3 12.56 2.58 12.08 1.97 11.46C1.36 10.85 0.88 10.13 0.52 9.32C0.16 8.51 0 7.63 0 6.71C0 5.79 0.17 4.92 0.53 4.1C0.89 3.28 1.36 2.57 1.98 1.96C2.58 1.36 3.3 0.88 4.11 0.53C4.92 0.18 5.79 0 6.71 0ZM8.28 5.51H7.21V4.83C7.21 4.69 7.24 4.6 7.31 4.56C7.38 4.52 7.45 4.5 7.52 4.5H8.26V3.35H7.23C6.94 3.35 6.7 3.4 6.52 3.49C6.34 3.59 6.19 3.71 6.09 3.85C5.98 4 5.91 4.15 5.87 4.31C5.84 4.46 5.82 4.61 5.82 4.75V5.51H5.16V6.71H5.82V10.06H7.2V6.71H8.15L8.28 5.51Z"
+                  fill="#C5043C"
+                />
+              </svg>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.86991 13.42C5.93991 13.42 5.05991 13.24 4.23991 12.89C3.41991 12.54 2.70991 12.06 2.10991 11.45C1.50991 10.84 1.02991 10.13 0.679913 9.32C0.329913 8.51 0.159912 7.64 0.159912 6.71C0.159912 5.79 0.329913 4.92 0.679913 4.11C1.02991 3.29 1.50991 2.58 2.10991 1.97C2.70991 1.36 3.42991 0.88 4.23991 0.53C5.04991 0.18 5.93991 0 6.86991 0C7.78991 0 8.65991 0.18 9.46991 0.53C10.2899 0.88 10.9999 1.36 11.6099 1.97C12.2199 2.58 12.6999 3.3 13.0499 4.11C13.3999 4.93 13.5799 5.8 13.5799 6.71C13.5799 7.64 13.3999 8.52 13.0499 9.32C12.6999 10.13 12.2199 10.84 11.6099 11.45C10.9999 12.06 10.2899 12.54 9.46991 12.89C8.65991 13.25 7.78991 13.42 6.86991 13.42ZM11.0499 4.18C11.0499 3.71 10.8899 3.32 10.5699 3C10.2499 2.68 9.84991 2.52 9.38991 2.52H4.34991C3.87991 2.52 3.48991 2.68 3.16991 3C2.84991 3.32 2.68991 3.72 2.68991 4.18V9.22C2.68991 9.69 2.84991 10.08 3.16991 10.4C3.48991 10.72 3.88991 10.88 4.34991 10.88H9.38991C9.85991 10.88 10.2499 10.72 10.5699 10.4C10.8899 10.08 11.0499 9.68 11.0499 9.22V4.18ZM6.86991 4.61C6.63991 4.61 6.40991 4.65 6.19991 4.72C5.98991 4.8 5.78991 4.9 5.60991 5.02H3.50991V4.61C3.50991 4.25 3.62991 3.95 3.86991 3.71C4.10991 3.47 4.40991 3.35 4.76991 3.35H8.94991C9.30991 3.35 9.60991 3.47 9.85991 3.71C10.1099 3.95 10.2299 4.25 10.2299 4.61V5.02H8.10991C7.92991 4.9 7.73991 4.8 7.52991 4.72C7.31991 4.65 7.09991 4.61 6.86991 4.61ZM8.94991 10.07H4.76991C4.40991 10.07 4.10991 9.95 3.86991 9.7C3.62991 9.45 3.50991 9.16 3.50991 8.82V5.46H5.17991C5.05991 5.64 4.95991 5.83 4.87991 6.05C4.79991 6.26 4.76991 6.49 4.76991 6.72C4.76991 7.01 4.81991 7.28 4.92991 7.53C5.03991 7.78 5.18991 8.01 5.36991 8.2C5.55991 8.39 5.77991 8.54 6.03991 8.65C6.29991 8.76 6.57991 8.82 6.85991 8.82C7.13991 8.82 7.41991 8.76 7.66991 8.65C7.91991 8.54 8.13991 8.39 8.32991 8.2C8.50991 8.01 8.65991 7.79 8.76991 7.53C8.89991 7.27 8.94991 7 8.94991 6.71C8.94991 6.48 8.90991 6.25 8.83991 6.04C8.75991 5.83 8.66991 5.63 8.53991 5.45H10.2299V8.81C10.2299 9.15 10.1099 9.45 9.85991 9.69C9.60991 9.94 9.30991 10.07 8.94991 10.07ZM6.86991 5.46C7.20991 5.46 7.50991 5.58 7.74991 5.82C7.99991 6.06 8.11991 6.36 8.11991 6.72C8.11991 7.08 7.99991 7.38 7.74991 7.62C7.49991 7.86 7.20991 7.98 6.86991 7.98C6.50991 7.98 6.20991 7.86 5.95991 7.62C5.70991 7.38 5.58991 7.08 5.58991 6.72C5.58991 6.36 5.70991 6.06 5.95991 5.82C6.20991 5.58 6.51991 5.46 6.86991 5.46ZM8.53991 4.61H9.37991V3.77H8.53991V4.61Z"
+                  fill="#C5043C"
+                />
+              </svg>
+
+              /julicepaes</span
+            >
+          </div>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="sociais">
+          <div class="container">
+            <span class="whats"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1827_37)">
+                  <path
+                    d="M9.04011 7.62999C8.86011 7.53999 8.68011 7.45999 8.50011 7.36999C8.41011 7.32999 8.32011 7.28999 8.23011 7.25999C8.14011 7.21999 8.10011 7.23999 8.04011 7.30999C7.93011 7.43999 7.83011 7.56999 7.72011 7.70999C7.68011 7.75999 7.62011 7.77999 7.55011 7.75999C7.51011 7.73999 7.46011 7.71999 7.42011 7.69999C7.11011 7.56999 6.83011 7.38999 6.59011 7.14999C6.47011 7.03999 6.36011 6.90999 6.27011 6.76999C6.21011 6.68999 6.16011 6.60999 6.11011 6.51999C6.08011 6.46999 6.09011 6.41999 6.13011 6.37999C6.16011 6.33999 6.20011 6.29999 6.23011 6.25999C6.30011 6.17999 6.37011 6.10999 6.41011 6.00999C6.44011 5.94999 6.44011 5.89999 6.41011 5.83999C6.31011 5.61999 6.22011 5.38999 6.13011 5.16999C6.10011 5.09999 6.08011 5.02999 6.03011 4.96999C6.00011 4.92999 5.97011 4.90999 5.93011 4.90999C5.88011 4.90999 5.82011 4.90999 5.77011 4.90999V4.89999C5.74011 4.89999 5.70011 4.89999 5.67011 4.89999C5.59011 4.89999 5.52011 4.91999 5.47011 4.96999C5.40011 5.02999 5.34011 5.08999 5.29011 5.14999C5.09011 5.38999 5.02011 5.67999 5.05011 5.98999C5.07011 6.16999 5.13011 6.32999 5.21011 6.49999C5.28011 6.64999 5.37011 6.78999 5.47011 6.91999C5.61011 7.09999 5.74011 7.27999 5.90011 7.43999C6.04011 7.59999 6.20011 7.75999 6.37011 7.88999C6.57011 8.04999 6.78011 8.19999 7.01011 8.31999C7.20011 8.41999 7.40011 8.48999 7.60011 8.55999C7.77011 8.61999 7.94011 8.66999 8.12011 8.67999C8.23011 8.67999 8.35011 8.67999 8.46011 8.64999C8.62011 8.60999 8.77011 8.52999 8.90011 8.41999C8.98011 8.35999 9.05011 8.28999 9.09011 8.18999C9.14011 8.04999 9.17011 7.90999 9.17011 7.75999C9.17011 7.71999 9.15011 7.68999 9.12011 7.66999C9.09011 7.65999 9.07011 7.63999 9.04011 7.62999Z"
+                    fill="#C5043C"
+                  />
+                  <path
+                    d="M13.04 4.15C12.68 3.32 12.2 2.6 11.59 1.99C10.98 1.38 10.26 0.89 9.43 0.54C8.6 0.18 7.72 0 6.79 0C5.86 0 4.98 0.18 4.16 0.53C3.33 0.89 2.61 1.37 1.99 1.98C1.37 2.6 0.89 3.32 0.53 4.15C0.18 4.98 0 5.86 0 6.79C0 7.72 0.18 8.6 0.53 9.42C0.89 10.24 1.37 10.96 1.99 11.58C2.61 12.2 3.33 12.69 4.15 13.04C4.97 13.4 5.85 13.57 6.78 13.57C7.71 13.57 8.59 13.39 9.42 13.04C10.25 12.68 10.97 12.2 11.58 11.58C12.19 10.96 12.68 10.24 13.03 9.42C13.39 8.6 13.56 7.72 13.56 6.79C13.58 5.86 13.4 4.98 13.04 4.15ZM11.01 7.36C10.97 7.61 10.91 7.85 10.83 8.09C10.69 8.49 10.49 8.86 10.23 9.2C10.06 9.42 9.86 9.63 9.64 9.81C9.38 10.03 9.1 10.21 8.79 10.36C8.47 10.51 8.14 10.62 7.79 10.68C7.52 10.73 7.25 10.75 6.98 10.74C6.59 10.73 6.21 10.66 5.84 10.54C5.64 10.47 5.44 10.39 5.25 10.29C5.24 10.28 5.22 10.28 5.21 10.28C4.93 10.35 4.64 10.42 4.36 10.49C4.03 10.57 3.7 10.65 3.38 10.73C3.27 10.76 3.17 10.7 3.16 10.58C3.16 10.54 3.17 10.5 3.18 10.46C3.32 9.95 3.47 9.44 3.61 8.93C3.63 8.87 3.64 8.81 3.66 8.75C3.66 8.74 3.66 8.72 3.65 8.71C3.53 8.48 3.42 8.24 3.34 7.99C3.28 7.79 3.23 7.59 3.2 7.39C3.17 7.16 3.15 6.93 3.16 6.7C3.17 6.56 3.17 6.42 3.19 6.29C3.22 6.07 3.27 5.85 3.33 5.63C3.44 5.26 3.61 4.91 3.83 4.59C4.01 4.32 4.22 4.08 4.46 3.86C4.75 3.6 5.07 3.38 5.43 3.22C5.71 3.08 6 2.98 6.31 2.92C6.47 2.89 6.63 2.87 6.78 2.85C6.89 2.84 7 2.84 7.06 2.84C7.33 2.84 7.55 2.86 7.77 2.9C8.04 2.94 8.3 3.02 8.56 3.12C8.91 3.26 9.24 3.45 9.54 3.68C9.69 3.8 9.83 3.92 9.96 4.06C10.18 4.29 10.36 4.53 10.52 4.8C10.72 5.14 10.87 5.51 10.95 5.9C10.98 6.04 11 6.19 11.02 6.34C11.05 6.52 11.05 6.7 11.05 6.87C11.05 7.04 11.04 7.2 11.01 7.36Z"
+                    fill="#C5043C"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1827_37">
+                    <rect width="13.58" height="13.58" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Fale conosco pelo Whatsapp</span
+            >
+            <span class="tel">11 9 9430 4012</span>
+            <span class="tel">11 3097 9162</span>
+            <span class="insta"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.71 0C7.63 0 8.5 0.18 9.32 0.53C10.14 0.88 10.85 1.36 11.46 1.97C12.07 2.58 12.54 3.29 12.9 4.11C13.26 4.93 13.43 5.8 13.43 6.72C13.43 7.64 13.25 8.51 12.9 9.32C12.55 10.13 12.07 10.85 11.46 11.46C10.85 12.07 10.14 12.55 9.32 12.91C8.5 13.26 7.63 13.44 6.71 13.44C5.79 13.44 4.92 13.26 4.11 12.91C3.3 12.56 2.58 12.08 1.97 11.46C1.36 10.85 0.88 10.13 0.52 9.32C0.16 8.51 0 7.63 0 6.71C0 5.79 0.17 4.92 0.53 4.1C0.89 3.28 1.36 2.57 1.98 1.96C2.58 1.36 3.3 0.88 4.11 0.53C4.92 0.18 5.79 0 6.71 0ZM8.28 5.51H7.21V4.83C7.21 4.69 7.24 4.6 7.31 4.56C7.38 4.52 7.45 4.5 7.52 4.5H8.26V3.35H7.23C6.94 3.35 6.7 3.4 6.52 3.49C6.34 3.59 6.19 3.71 6.09 3.85C5.98 4 5.91 4.15 5.87 4.31C5.84 4.46 5.82 4.61 5.82 4.75V5.51H5.16V6.71H5.82V10.06H7.2V6.71H8.15L8.28 5.51Z"
+                  fill="#C5043C"
+                />
+              </svg>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.86991 13.42C5.93991 13.42 5.05991 13.24 4.23991 12.89C3.41991 12.54 2.70991 12.06 2.10991 11.45C1.50991 10.84 1.02991 10.13 0.679913 9.32C0.329913 8.51 0.159912 7.64 0.159912 6.71C0.159912 5.79 0.329913 4.92 0.679913 4.11C1.02991 3.29 1.50991 2.58 2.10991 1.97C2.70991 1.36 3.42991 0.88 4.23991 0.53C5.04991 0.18 5.93991 0 6.86991 0C7.78991 0 8.65991 0.18 9.46991 0.53C10.2899 0.88 10.9999 1.36 11.6099 1.97C12.2199 2.58 12.6999 3.3 13.0499 4.11C13.3999 4.93 13.5799 5.8 13.5799 6.71C13.5799 7.64 13.3999 8.52 13.0499 9.32C12.6999 10.13 12.2199 10.84 11.6099 11.45C10.9999 12.06 10.2899 12.54 9.46991 12.89C8.65991 13.25 7.78991 13.42 6.86991 13.42ZM11.0499 4.18C11.0499 3.71 10.8899 3.32 10.5699 3C10.2499 2.68 9.84991 2.52 9.38991 2.52H4.34991C3.87991 2.52 3.48991 2.68 3.16991 3C2.84991 3.32 2.68991 3.72 2.68991 4.18V9.22C2.68991 9.69 2.84991 10.08 3.16991 10.4C3.48991 10.72 3.88991 10.88 4.34991 10.88H9.38991C9.85991 10.88 10.2499 10.72 10.5699 10.4C10.8899 10.08 11.0499 9.68 11.0499 9.22V4.18ZM6.86991 4.61C6.63991 4.61 6.40991 4.65 6.19991 4.72C5.98991 4.8 5.78991 4.9 5.60991 5.02H3.50991V4.61C3.50991 4.25 3.62991 3.95 3.86991 3.71C4.10991 3.47 4.40991 3.35 4.76991 3.35H8.94991C9.30991 3.35 9.60991 3.47 9.85991 3.71C10.1099 3.95 10.2299 4.25 10.2299 4.61V5.02H8.10991C7.92991 4.9 7.73991 4.8 7.52991 4.72C7.31991 4.65 7.09991 4.61 6.86991 4.61ZM8.94991 10.07H4.76991C4.40991 10.07 4.10991 9.95 3.86991 9.7C3.62991 9.45 3.50991 9.16 3.50991 8.82V5.46H5.17991C5.05991 5.64 4.95991 5.83 4.87991 6.05C4.79991 6.26 4.76991 6.49 4.76991 6.72C4.76991 7.01 4.81991 7.28 4.92991 7.53C5.03991 7.78 5.18991 8.01 5.36991 8.2C5.55991 8.39 5.77991 8.54 6.03991 8.65C6.29991 8.76 6.57991 8.82 6.85991 8.82C7.13991 8.82 7.41991 8.76 7.66991 8.65C7.91991 8.54 8.13991 8.39 8.32991 8.2C8.50991 8.01 8.65991 7.79 8.76991 7.53C8.89991 7.27 8.94991 7 8.94991 6.71C8.94991 6.48 8.90991 6.25 8.83991 6.04C8.75991 5.83 8.66991 5.63 8.53991 5.45H10.2299V8.81C10.2299 9.15 10.1099 9.45 9.85991 9.69C9.60991 9.94 9.30991 10.07 8.94991 10.07ZM6.86991 5.46C7.20991 5.46 7.50991 5.58 7.74991 5.82C7.99991 6.06 8.11991 6.36 8.11991 6.72C8.11991 7.08 7.99991 7.38 7.74991 7.62C7.49991 7.86 7.20991 7.98 6.86991 7.98C6.50991 7.98 6.20991 7.86 5.95991 7.62C5.70991 7.38 5.58991 7.08 5.58991 6.72C5.58991 6.36 5.70991 6.06 5.95991 5.82C6.20991 5.58 6.51991 5.46 6.86991 5.46ZM8.53991 4.61H9.37991V3.77H8.53991V4.61Z"
+                  fill="#C5043C"
+                />
+              </svg>
+
+              /julicepaes</span
+            >
+          </div>
+        </div>
+        <div class="menu">
+          <div class="container">
+            <a href="index.html" class="logo"
+              ><img src="assets/img/logo.png" class="img" alt="Julice"
+            /></a>
+            <nav>
+              <ul data-menu="lista">
+                <li><a href="padaria.html" class="ativo">Padaria</a></li>
+                <li><a href="">Cestas e Presentes</a></li>
+                <li><a href="">Compras On-line</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero cardapio_hero">
+      <div class="container">
+        <div class="titulos">
+          <span class="sub">NOSSO</span>
+          <h1 class="titulo">cardápio</h1>
+        </div>
+
+        <div class="item_menu">
+          <h2 class="titulo">boulangère</h2>
+
+          <div class="itens_cardapio">
+            <div class="item_cardapio">
+              <h2>BRIOCHE</h2>
+              <p>Tradicional pão brioche francês</p>
+            </div>
+            <div class="item_cardapio">
+              <h2>PAIN AU CHOCOLAT</h2>
+              <p>
+                Tradicional chocolat Julice, massa de fermentação natual
+                recheado com chocolate meio amargo Callebaut
+              </p>
+            </div>
+            <div class="item_cardapio">
+              <h2>CROISSANT TRADICIONAL</h2>
+              <p>
+                Croissant Julice, massa de fermentação natura e manteiga
+                importata
+              </p>
+            </div>
+            <div class="item_cardapio">
+              <h2>PAIN AU CHOCOLAT COM CREME DE AMÊNDOAS</h2>
+              <p>
+                Pain au chocolat recheado e coberto com creme de amêndoas e
+                amendoas laminadas
+              </p>
+            </div>
+            <div class="item_cardapio">
+              <h2>CROISSANT COM CREME DE AMÊNDOAS</h2>
+              <p>
+                Croissant Julice, massa de fermentação natura e manteiga
+                importata
+              </p>
+            </div>
+            <div class="item_cardapio">
+              <h2>SCONE</h2>
+              <p>
+                Bolo inglês com base de creme de leite e passas de cranberry
+              </p>
+            </div>
+            <div class="item_cardapio">
+              <h2>BOLINHA</h2>
+              <p>Massa au levain, água, farinha de trigo e sal</p>
+            </div>
+            <div class="item_cardapio">
+              <h2>MINI BAGUETTE</h2>
+              <p>Baguette francêsa au levain</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_menu">
+          <div class="grid_cardapio">
+            <div>
+              <h2 class="titulo">pâtisserie</h2>
+
+              <div class="item_cardapio mt">
+                <h2>CHOUX JULICE</h2>
+                <p>Massa choux recheada com crème patissière tradicional</p>
+              </div>
+
+              <div class="item_cardapio">
+                <h2>ÉCLAIR</h2>
+                <p>Éclair tradicional francesa au chocolat</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>PÂTISSERIE</h2>
+                <p>
+                  Torta individual com crème patissière coberta por diversas
+                  frutas frescas: morango, framboesa, amora. No mesmo formato
+                  temos a torta de amêndoas recheada com o creme de amendoas e
+                  torta de nozes com creme de nozes e a tradicional de torta
+                  sabor limão
+                </p>
+              </div>
+
+              <h2 class="titulo mt-large">sobremesas</h2>
+              <div class="item_cardapio mt">
+                <h2>PETIT GATEAU</h2>
+                <p>Bolinho cremoso de chocolate, com sorvete de baunilha</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>CREME DE PAPAYA</h2>
+                <p>Mamão papaia batido com sorvete de baunilha</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>BROWNIE COM SORVETE</h2>
+                <p>Brownie tradicional com sorvete de baunilha</p>
+              </div>
+
+              <h2 class="titulo mt-large">bebidas quentes</h2>
+              <div class="item_cardapio mt">
+                <h2>CAFÉ</h2>
+
+                <ul>
+                  <li>Espresso</li>
+                  <li>Espresso Macchiato</li>
+                  <li>Coado</li>
+                  <li>Cappuccino</li>
+                  <li>Latte Macchiato</li>
+                  <li>Café com leite</li>
+                  <li>Chocolate quente</li>
+                </ul>
+              </div>
+
+              <div class="item_cardapio mt_30">
+                <h2>CHÁ</h2>
+
+                <ul>
+                  <li>Hortelã</li>
+                  <li>Frutas Silvestres</li>
+                  <li>Camomila</li>
+                  <li>Erva Doce</li>
+                </ul>
+              </div>
+
+              <h2 class="titulo mt-large">café da manhã</h2>
+              <div class="item_cardapio mt">
+                <h2>TRADITION</h2>
+                <p>
+                  Nossa perfeita mini baguette feita de farinha branca,
+                  croissant francês original ou brioche de textura leve e aerada
+                  acompanhadas de manteiga, fatia de bolo e bebida quente à sua
+                  escolha (espresso, café com leite chocolate quente ou
+                  cappuccino)
+                </p>
+              </div>
+              <div class="item_cardapio">
+                <h2>RAPIDE</h2>
+                <p>
+                  Croissant original ou mini baguette na chapa, mini porção de
+                  ovo mexido Tradition. Acompanha geleia artesanal Julice,
+                  manteiga e bebida quente à sua escolha (espresso, café com
+                  leite, chocolate quente ou cappuccino)
+                </p>
+              </div>
+              <div class="item_cardapio">
+                <h2>REDEZ VOUZ</h2>
+                <p>
+                  Fatias de um dos nossos deliciosos pães acompanhadas por dois
+                  sabores diferentes de geleia artesanal Julice, manteiga, mini
+                  porção de ovos mexidos Tradicion, salada de frutas e duas
+                  bebidas quentes à sua escolha (espresso, café com leite,
+                  chocolate quente ou cappuccino)
+                </p>
+              </div>
+              <div class="item_cardapio">
+                <h2>BRUNCH</h2>
+                <p>
+                  Variedade de pa~es artesanais, uma porção de manteiga, uma
+                  porção de requeijão, duas porções de geleia artesanal Julice,
+                  dois mini croques, duas fatias de quiche, duas saladas de
+                  frutas, dois iogurtes com granola, dois mini crepes de
+                  presunto, queijo mussarela e ovo frito, duas sobremesas de
+                  chocolate e porção de frios (duas fatias de presunto cru e
+                  queijo brie) acompanhados de duas mimosas e água de coco ou
+                  bebidas quentes ou cappuccino
+                </p>
+              </div>
+
+              <h2 class="titulo mt-large">ovos</h2>
+              <div class="item_cardapio mt">
+                <h2>FIT</h2>
+                <p>Ovo frito com bacon, tomate e rúcula</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>TRADITION</h2>
+                <p>Ovos mexidos</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>BASILIC</h2>
+                <p>Ovos mexidos, tomate e manjericão</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>BACON</h2>
+                <p>Ovos mexidos com bacon</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>OMELETE TRADITION</h2>
+                <p>Omelete tradicional</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>OMELETE FROMAGE</h2>
+                <p>Omelete com bacon e queijo meia cura</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>OVO BENEDICT</h2>
+                <p>
+                  Ovo escalfado, bacon ou presunto e molho holandês, montados em
+                  uma fatia de brioche Julice
+                </p>
+              </div>
+
+              <h2 class="titulo mt-large">croques</h2>
+              <div class="item_cardapio mt">
+                <h2>CROQUE MONSIEUR</h2>
+                <p>
+                  Duas generosas fatias de pão de mie cobertas e recheadas com
+                  molho branco e fatias de presunto finalizado com parmesão
+                  gratinado no forno
+                </p>
+              </div>
+
+              <div class="item_cardapio">
+                <h2>CROQUE MADAME</h2>
+                <p>
+                  Nosso famoso Croque Monsieur coberto com um ovo com a gema
+                  mole
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 class="titulo">extras</h2>
+
+              <div class="item_cardapio mt">
+                <h2>FRIOS</h2>
+                <p>Presunto, peito de peru, muçarela, queijo branco</p>
+              </div>
+
+              <div class="item_cardapio solo">
+                <h2>REQUEIJÃO</h2>
+              </div>
+              <div class="item_cardapio solo">
+                <h2>GELEIA ARTESANAL JULICE</h2>
+              </div>
+              <div class="item_cardapio solo">
+                <h2>SALADA DE FRUTAS</h2>
+              </div>
+              <div class="item_cardapio solo">
+                <h2>FATIA DE MAMÃO</h2>
+              </div>
+              <div class="item_cardapio solo">
+                <h2>MEL</h2>
+              </div>
+              <div class="item_cardapio solo">
+                <h2>IOGURTE</h2>
+              </div>
+              <div class="item_cardapio solo">
+                <h2>IOGURTE COM GRANOLA</h2>
+              </div>
+              <div class="item_cardapio solo">
+                <h2>CESTA DE PÃES</h2>
+              </div>
+
+              <h2 class="titulo mt-large">bebidas</h2>
+
+              <div class="item_cardapio mt">
+                <h2>SUCOS</h2>
+                <ul>
+                  <li>Laranja</li>
+                  <li>Suco Verde</li>
+                  <li>Outros (Maracujá, Limonada Suíça com</li>
+                  <li>
+                    Outros (Maracujá, Limonada Suíça com Leite Condensado, Melão
+                    com Gengibre, Melancia, Abacaxi com hortelã, Tangerina,
+                    Limão
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item_cardapio mt_30">
+                <h2>SOFT DRINKS</h2>
+                <ul>
+                  <li>Refrigerante 350ml</li>
+                  <li>Água com ou sem gás</li>
+                  <li>Água de coco</li>
+                  <li>Chocolate batido</li>
+                  <li>Iogurte batido com frutas</li>
+                </ul>
+              </div>
+
+              <div class="item_cardapio mt_30">
+                <h2>DRINKS</h2>
+                <ul>
+                  <li>Mimosa</li>
+                  <li>Aperol Spritz</li>
+                  <li>Caipirinha</li>
+                  <li>Caipiroska</li>
+                  <li>Gin Tônica</li>
+                </ul>
+              </div>
+
+              <div class="item_cardapio mt_30">
+                <h2>CERVEJAS</h2>
+                <ul>
+                  <li>Heineken Long Neck</li>
+                  <li>Stella Artois Long Neck</li>
+                  <li>Budweiser Long Neck</li>
+                </ul>
+              </div>
+
+              <div class="item_cardapio mt_30">
+                <h2>VINHO TAÇA</h2>
+                <ul>
+                  <li>Aldeias das Serras Regional Tinto</li>
+                  <li>Aldeias das Serras Regional Branco</li>
+                </ul>
+              </div>
+
+              <h2 class="titulo mt-large">croissants</h2>
+              <div class="item_cardapio mt">
+                <h2>JAMBON ET FROMAGE</h2>
+                <p>Queijo gouda com fatias de presunto</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>CHÈVRE</h2>
+                <p>Presunto cru, queijo de cabra e rúcula</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>BLANC</h2>
+                <p>Queijo branco e peito de peru</p>
+              </div>
+
+              <h2 class="titulo mt-large">quiches e saladas</h2>
+              <div class="item_cardapio mt">
+                <h2>QUICHE LORAINE</h2>
+                <p>
+                  Seguindo a receita francesa, leva pedacinhos ternos de bacon
+                  num recheio cremoso com parmesão
+                </p>
+              </div>
+              <div class="item_cardapio">
+                <h2>QUICHE ALHO PORÓ</h2>
+                <p>
+                  Alho poró fresco no recheio cremoso ao vinho branco e queijo
+                  parmesão
+                </p>
+              </div>
+              <div class="item_cardapio">
+                <h2>VERDE COM GORGONZOLA</h2>
+                <p>Mix de folhas com queijo gorgonzola</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>CARPACCIO JULICE</h2>
+                <p>
+                  Carpaccio de carne, mix de folhas, parmesão e molho de
+                  mostarda
+                </p>
+              </div>
+
+              <h2 class="titulo mt-large">tapioca</h2>
+              <div class="item_cardapio mt">
+                <h2>OEUF</h2>
+                <p>Tapioca com ovos mexidos, requeijão e cebolinha</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>COCO E LEITE CONDENSADO</h2>
+                <p>Tapioca com coco fresco e leite condesado</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>COGU</h2>
+                <p>Tapioca com mix de cogumelo e castanha</p>
+              </div>
+              <div class="item_cardapio">
+                <h2>BANANA E CANELA</h2>
+                <p>Tapioca com banana e canela</p>
+              </div>
+
+              <h2 class="titulo mt-large">sanduíches</h2>
+              <div class="item_cardapio mt">
+                <h2>TARTINI PARMA</h2>
+                <p>
+                  Fatia de pão coberta por finas fatias deparma, tomates, pesto,
+                  rúcula e parmesão
+                </p>
+              </div>
+              <div class="item_cardapio">
+                <h2>BAURU</h2>
+                <p>
+                  Na ciabatta com presunto ou peito de peru, muçarela de búfala,
+                  tomate e maionese
+                </p>
+              </div>
+              <div class="item_cardapio">
+                <h2>AVOCADO</h2>
+                <p>Pão de farinha de centeio com avocado, bacon, e ovos</p>
+              </div>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=5511994304012&text=Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20pre%C3%A7os%20e%20produtos"
+                class="grid_whats mt-large"
+                ><svg
+                  width="58"
+                  height="58"
+                  viewBox="0 0 58 58"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1921_2)">
+                    <path
+                      d="M38.1699 32.2201L35.8899 31.12C35.5199 30.95 35.1399 30.7801 34.7499 30.6401C34.3599 30.5001 34.1899 30.5703 33.9299 30.8803C33.4899 31.4403 33.0299 32.0002 32.5699 32.5502C32.4934 32.6582 32.3817 32.7363 32.254 32.7709C32.1263 32.8056 31.9905 32.7947 31.8699 32.7402L31.3299 32.5102C30.0267 31.9747 28.8385 31.1941 27.8299 30.2104C27.3306 29.7115 26.8724 29.1727 26.4599 28.6C26.2199 28.25 25.9999 27.8902 25.7799 27.5302C25.7218 27.4388 25.6971 27.3301 25.7098 27.2226C25.7226 27.1151 25.7721 27.0156 25.8499 26.9404C25.9899 26.7804 26.1499 26.6201 26.2899 26.4501C26.6006 26.1282 26.8602 25.7607 27.0599 25.3603C27.1119 25.2474 27.1388 25.1247 27.1388 25.0004C27.1388 24.8761 27.1119 24.753 27.0599 24.6401C26.6499 23.7001 26.2599 22.7505 25.8599 21.8105C25.7607 21.5119 25.6192 21.2287 25.4399 20.9701C25.3923 20.9013 25.3298 20.8442 25.2571 20.8027C25.1844 20.7611 25.1034 20.7365 25.0199 20.7304C24.7899 20.7304 24.5699 20.7304 24.3399 20.7304H23.8999C23.5848 20.7244 23.2786 20.8348 23.0399 21.0405C22.7858 21.2662 22.5485 21.5102 22.3299 21.7704C21.9257 22.2602 21.628 22.8286 21.4559 23.4399C21.2837 24.0511 21.2408 24.6915 21.3299 25.3202C21.4278 26.067 21.6544 26.7912 21.9999 27.4604C22.3126 28.0854 22.6808 28.6809 23.0999 29.2402C23.6513 30.0128 24.2456 30.7542 24.8799 31.4604C25.5018 32.1392 26.1701 32.774 26.8799 33.3603C27.7058 34.0598 28.6082 34.6635 29.5699 35.1601C30.3697 35.5487 31.195 35.8828 32.0399 36.1601C32.7443 36.4336 33.486 36.599 34.2399 36.6503C34.7196 36.6654 35.1994 36.6251 35.6699 36.5302C36.3694 36.3414 37.0183 35.9999 37.5699 35.5302C37.9245 35.2804 38.199 34.933 38.3599 34.5302C38.5956 33.9499 38.7047 33.3259 38.6799 32.7001C38.6803 32.628 38.6621 32.5571 38.6271 32.4941C38.592 32.431 38.5414 32.378 38.4799 32.3403L38.1699 32.2201Z"
+                      fill="#DA882E"
+                    />
+                    <path
+                      d="M55.0801 17.51C52.1904 10.6197 46.7104 5.13993 39.8201 2.25025C36.2934 0.743923 32.4949 -0.0219041 28.6601 0.000248906C24.8412 -0.023909 21.0587 0.74214 17.5501 2.25025C14.1481 3.70073 11.0505 5.78037 8.42011 8.38013C5.78749 10.9918 3.69139 14.0933 2.25007 17.51C0.74374 21.0367 -0.0220872 24.8353 6.58009e-05 28.6702C-0.0240921 32.489 0.741957 36.2715 2.25007 39.78C5.18922 46.6625 10.6695 52.1464 17.5501 55.0901C21.0587 56.5982 24.8412 57.3642 28.6601 57.3401C32.4949 57.3622 36.2934 56.5964 39.8201 55.0901C43.2373 53.6451 46.3388 51.5455 48.9501 48.9099C51.5498 46.2795 53.6296 43.1821 55.0801 39.78C56.5916 36.2722 57.3611 32.4897 57.3401 28.6702C57.3591 24.8346 56.5898 21.036 55.0801 17.51V17.51ZM46.5001 31.0701C46.3508 32.1219 46.0996 33.1567 45.7501 34.1599C45.1528 35.8449 44.2921 37.4247 43.2001 38.8401C42.4684 39.7834 41.6406 40.6481 40.7301 41.4202C39.6358 42.3386 38.4295 43.1149 37.1401 43.7302C34.7632 44.8612 32.1511 45.4093 29.5201 45.3298C27.88 45.2802 26.2561 44.9906 24.7001 44.47C23.8433 44.1831 23.0107 43.8286 22.2101 43.4099C22.155 43.3909 22.0952 43.3909 22.0401 43.4099L18.4401 44.3001L14.2801 45.3001C14.1765 45.3357 14.066 45.3469 13.9573 45.3328C13.8486 45.3186 13.7447 45.2795 13.6536 45.2185C13.5626 45.1575 13.4869 45.0764 13.4325 44.9812C13.3781 44.886 13.3465 44.7796 13.3401 44.6702C13.3359 44.4959 13.3665 44.3222 13.4301 44.1599L15.2301 37.72C15.3101 37.46 15.3801 37.2002 15.4401 36.9402C15.4651 36.8793 15.4651 36.8111 15.4401 36.7502C14.9062 35.7956 14.4674 34.7907 14.1301 33.7502C13.8687 32.9233 13.6715 32.0772 13.5401 31.22C13.3902 30.261 13.33 29.2902 13.3601 28.3201C13.3601 27.7401 13.4001 27.1598 13.4801 26.5798C13.5981 25.6406 13.7989 24.7142 14.0801 23.8103C14.555 22.2545 15.2594 20.7778 16.1701 19.4299C16.9316 18.2896 17.8318 17.2482 18.8501 16.3298C20.0705 15.2295 21.445 14.3135 22.9301 13.6101C24.1167 13.0423 25.3698 12.6255 26.6601 12.3699C27.3201 12.2399 27.9901 12.1601 28.6601 12.0901C29.1101 12.0401 29.5701 12.0303 29.8401 12.0203C30.845 12.0169 31.8485 12.0969 32.8401 12.26C35.5574 12.7292 38.1167 13.8631 40.2901 15.5603C41.9678 16.871 43.3797 18.4895 44.4501 20.3298C45.2905 21.7683 45.9076 23.3262 46.2801 24.95C46.4101 25.56 46.5001 26.1903 46.5901 26.8103C46.6899 27.5559 46.73 28.3083 46.7101 29.0603C46.6788 29.7338 46.6086 30.4047 46.5001 31.0701V31.0701Z"
+                      fill="#DA882E"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1921_2">
+                      <rect width="57.33" height="57.33" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Consulte preços atualizados pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato">
+      <div class="content-contato content-contato-resumo">
+        <div class="container">
+          <a href="index.html" class="logo-footer">
+            <img src="assets/img/logo.png" alt="Julice" />
+          </a>
+
+          <div class="endereco">
+            <span>Rua Dep. Lacerda Franco, 536 | Pinheiros | São Paulo</span>
+            <div class="sociais-footer">
+              <span class="whats"
+                ><svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1827_37)">
+                    <path
+                      d="M9.04011 7.62999C8.86011 7.53999 8.68011 7.45999 8.50011 7.36999C8.41011 7.32999 8.32011 7.28999 8.23011 7.25999C8.14011 7.21999 8.10011 7.23999 8.04011 7.30999C7.93011 7.43999 7.83011 7.56999 7.72011 7.70999C7.68011 7.75999 7.62011 7.77999 7.55011 7.75999C7.51011 7.73999 7.46011 7.71999 7.42011 7.69999C7.11011 7.56999 6.83011 7.38999 6.59011 7.14999C6.47011 7.03999 6.36011 6.90999 6.27011 6.76999C6.21011 6.68999 6.16011 6.60999 6.11011 6.51999C6.08011 6.46999 6.09011 6.41999 6.13011 6.37999C6.16011 6.33999 6.20011 6.29999 6.23011 6.25999C6.30011 6.17999 6.37011 6.10999 6.41011 6.00999C6.44011 5.94999 6.44011 5.89999 6.41011 5.83999C6.31011 5.61999 6.22011 5.38999 6.13011 5.16999C6.10011 5.09999 6.08011 5.02999 6.03011 4.96999C6.00011 4.92999 5.97011 4.90999 5.93011 4.90999C5.88011 4.90999 5.82011 4.90999 5.77011 4.90999V4.89999C5.74011 4.89999 5.70011 4.89999 5.67011 4.89999C5.59011 4.89999 5.52011 4.91999 5.47011 4.96999C5.40011 5.02999 5.34011 5.08999 5.29011 5.14999C5.09011 5.38999 5.02011 5.67999 5.05011 5.98999C5.07011 6.16999 5.13011 6.32999 5.21011 6.49999C5.28011 6.64999 5.37011 6.78999 5.47011 6.91999C5.61011 7.09999 5.74011 7.27999 5.90011 7.43999C6.04011 7.59999 6.20011 7.75999 6.37011 7.88999C6.57011 8.04999 6.78011 8.19999 7.01011 8.31999C7.20011 8.41999 7.40011 8.48999 7.60011 8.55999C7.77011 8.61999 7.94011 8.66999 8.12011 8.67999C8.23011 8.67999 8.35011 8.67999 8.46011 8.64999C8.62011 8.60999 8.77011 8.52999 8.90011 8.41999C8.98011 8.35999 9.05011 8.28999 9.09011 8.18999C9.14011 8.04999 9.17011 7.90999 9.17011 7.75999C9.17011 7.71999 9.15011 7.68999 9.12011 7.66999C9.09011 7.65999 9.07011 7.63999 9.04011 7.62999Z"
+                      fill="#e1dbcd"
+                    ></path>
+                    <path
+                      d="M13.04 4.15C12.68 3.32 12.2 2.6 11.59 1.99C10.98 1.38 10.26 0.89 9.43 0.54C8.6 0.18 7.72 0 6.79 0C5.86 0 4.98 0.18 4.16 0.53C3.33 0.89 2.61 1.37 1.99 1.98C1.37 2.6 0.89 3.32 0.53 4.15C0.18 4.98 0 5.86 0 6.79C0 7.72 0.18 8.6 0.53 9.42C0.89 10.24 1.37 10.96 1.99 11.58C2.61 12.2 3.33 12.69 4.15 13.04C4.97 13.4 5.85 13.57 6.78 13.57C7.71 13.57 8.59 13.39 9.42 13.04C10.25 12.68 10.97 12.2 11.58 11.58C12.19 10.96 12.68 10.24 13.03 9.42C13.39 8.6 13.56 7.72 13.56 6.79C13.58 5.86 13.4 4.98 13.04 4.15ZM11.01 7.36C10.97 7.61 10.91 7.85 10.83 8.09C10.69 8.49 10.49 8.86 10.23 9.2C10.06 9.42 9.86 9.63 9.64 9.81C9.38 10.03 9.1 10.21 8.79 10.36C8.47 10.51 8.14 10.62 7.79 10.68C7.52 10.73 7.25 10.75 6.98 10.74C6.59 10.73 6.21 10.66 5.84 10.54C5.64 10.47 5.44 10.39 5.25 10.29C5.24 10.28 5.22 10.28 5.21 10.28C4.93 10.35 4.64 10.42 4.36 10.49C4.03 10.57 3.7 10.65 3.38 10.73C3.27 10.76 3.17 10.7 3.16 10.58C3.16 10.54 3.17 10.5 3.18 10.46C3.32 9.95 3.47 9.44 3.61 8.93C3.63 8.87 3.64 8.81 3.66 8.75C3.66 8.74 3.66 8.72 3.65 8.71C3.53 8.48 3.42 8.24 3.34 7.99C3.28 7.79 3.23 7.59 3.2 7.39C3.17 7.16 3.15 6.93 3.16 6.7C3.17 6.56 3.17 6.42 3.19 6.29C3.22 6.07 3.27 5.85 3.33 5.63C3.44 5.26 3.61 4.91 3.83 4.59C4.01 4.32 4.22 4.08 4.46 3.86C4.75 3.6 5.07 3.38 5.43 3.22C5.71 3.08 6 2.98 6.31 2.92C6.47 2.89 6.63 2.87 6.78 2.85C6.89 2.84 7 2.84 7.06 2.84C7.33 2.84 7.55 2.86 7.77 2.9C8.04 2.94 8.3 3.02 8.56 3.12C8.91 3.26 9.24 3.45 9.54 3.68C9.69 3.8 9.83 3.92 9.96 4.06C10.18 4.29 10.36 4.53 10.52 4.8C10.72 5.14 10.87 5.51 10.95 5.9C10.98 6.04 11 6.19 11.02 6.34C11.05 6.52 11.05 6.7 11.05 6.87C11.05 7.04 11.04 7.2 11.01 7.36Z"
+                      fill="#e1dbcd"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1827_37">
+                      <rect width="13.58" height="13.58" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                11 9 9430 4012 | 11 3097 9162 |
+              </span>
+
+              <span class="insta"
+                ><svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.71 0C7.63 0 8.5 0.18 9.32 0.53C10.14 0.88 10.85 1.36 11.46 1.97C12.07 2.58 12.54 3.29 12.9 4.11C13.26 4.93 13.43 5.8 13.43 6.72C13.43 7.64 13.25 8.51 12.9 9.32C12.55 10.13 12.07 10.85 11.46 11.46C10.85 12.07 10.14 12.55 9.32 12.91C8.5 13.26 7.63 13.44 6.71 13.44C5.79 13.44 4.92 13.26 4.11 12.91C3.3 12.56 2.58 12.08 1.97 11.46C1.36 10.85 0.88 10.13 0.52 9.32C0.16 8.51 0 7.63 0 6.71C0 5.79 0.17 4.92 0.53 4.1C0.89 3.28 1.36 2.57 1.98 1.96C2.58 1.36 3.3 0.88 4.11 0.53C4.92 0.18 5.79 0 6.71 0ZM8.28 5.51H7.21V4.83C7.21 4.69 7.24 4.6 7.31 4.56C7.38 4.52 7.45 4.5 7.52 4.5H8.26V3.35H7.23C6.94 3.35 6.7 3.4 6.52 3.49C6.34 3.59 6.19 3.71 6.09 3.85C5.98 4 5.91 4.15 5.87 4.31C5.84 4.46 5.82 4.61 5.82 4.75V5.51H5.16V6.71H5.82V10.06H7.2V6.71H8.15L8.28 5.51Z"
+                    fill="#e1dbcd"
+                  ></path>
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.86991 13.42C5.93991 13.42 5.05991 13.24 4.23991 12.89C3.41991 12.54 2.70991 12.06 2.10991 11.45C1.50991 10.84 1.02991 10.13 0.679913 9.32C0.329913 8.51 0.159912 7.64 0.159912 6.71C0.159912 5.79 0.329913 4.92 0.679913 4.11C1.02991 3.29 1.50991 2.58 2.10991 1.97C2.70991 1.36 3.42991 0.88 4.23991 0.53C5.04991 0.18 5.93991 0 6.86991 0C7.78991 0 8.65991 0.18 9.46991 0.53C10.2899 0.88 10.9999 1.36 11.6099 1.97C12.2199 2.58 12.6999 3.3 13.0499 4.11C13.3999 4.93 13.5799 5.8 13.5799 6.71C13.5799 7.64 13.3999 8.52 13.0499 9.32C12.6999 10.13 12.2199 10.84 11.6099 11.45C10.9999 12.06 10.2899 12.54 9.46991 12.89C8.65991 13.25 7.78991 13.42 6.86991 13.42ZM11.0499 4.18C11.0499 3.71 10.8899 3.32 10.5699 3C10.2499 2.68 9.84991 2.52 9.38991 2.52H4.34991C3.87991 2.52 3.48991 2.68 3.16991 3C2.84991 3.32 2.68991 3.72 2.68991 4.18V9.22C2.68991 9.69 2.84991 10.08 3.16991 10.4C3.48991 10.72 3.88991 10.88 4.34991 10.88H9.38991C9.85991 10.88 10.2499 10.72 10.5699 10.4C10.8899 10.08 11.0499 9.68 11.0499 9.22V4.18ZM6.86991 4.61C6.63991 4.61 6.40991 4.65 6.19991 4.72C5.98991 4.8 5.78991 4.9 5.60991 5.02H3.50991V4.61C3.50991 4.25 3.62991 3.95 3.86991 3.71C4.10991 3.47 4.40991 3.35 4.76991 3.35H8.94991C9.30991 3.35 9.60991 3.47 9.85991 3.71C10.1099 3.95 10.2299 4.25 10.2299 4.61V5.02H8.10991C7.92991 4.9 7.73991 4.8 7.52991 4.72C7.31991 4.65 7.09991 4.61 6.86991 4.61ZM8.94991 10.07H4.76991C4.40991 10.07 4.10991 9.95 3.86991 9.7C3.62991 9.45 3.50991 9.16 3.50991 8.82V5.46H5.17991C5.05991 5.64 4.95991 5.83 4.87991 6.05C4.79991 6.26 4.76991 6.49 4.76991 6.72C4.76991 7.01 4.81991 7.28 4.92991 7.53C5.03991 7.78 5.18991 8.01 5.36991 8.2C5.55991 8.39 5.77991 8.54 6.03991 8.65C6.29991 8.76 6.57991 8.82 6.85991 8.82C7.13991 8.82 7.41991 8.76 7.66991 8.65C7.91991 8.54 8.13991 8.39 8.32991 8.2C8.50991 8.01 8.65991 7.79 8.76991 7.53C8.89991 7.27 8.94991 7 8.94991 6.71C8.94991 6.48 8.90991 6.25 8.83991 6.04C8.75991 5.83 8.66991 5.63 8.53991 5.45H10.2299V8.81C10.2299 9.15 10.1099 9.45 9.85991 9.69C9.60991 9.94 9.30991 10.07 8.94991 10.07ZM6.86991 5.46C7.20991 5.46 7.50991 5.58 7.74991 5.82C7.99991 6.06 8.11991 6.36 8.11991 6.72C8.11991 7.08 7.99991 7.38 7.74991 7.62C7.49991 7.86 7.20991 7.98 6.86991 7.98C6.50991 7.98 6.20991 7.86 5.95991 7.62C5.70991 7.38 5.58991 7.08 5.58991 6.72C5.58991 6.36 5.70991 6.06 5.95991 5.82C6.20991 5.58 6.51991 5.46 6.86991 5.46ZM8.53991 4.61H9.37991V3.77H8.53991V4.61Z"
+                    fill="#e1dbcd"
+                  ></path>
+                </svg>
+
+                /julicepaes</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <span>Todos os direitos reservados | Julice</span>
+    </footer>
+
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>

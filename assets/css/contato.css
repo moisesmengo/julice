@@ -1,0 +1,7 @@
+@import url(../css/home.css);
+
+.hero {
+  background: url(../img/bg-contato.webp) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

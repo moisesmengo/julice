@@ -1,0 +1,76 @@
+@import url(home.css);
+.hero {
+  background: linear-gradient(
+      180deg,
+      #fff 0%,
+      #fff 0%,
+      #1d1b1bb8 0.01%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(../img/bg-padaria.png) no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+}
+.content-hero-padaria {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 120px;
+}
+.content-hero-padaria .titulo {
+  max-width: 10ch;
+  line-height: 70px;
+  color: #da882e;
+}
+.content-hero-padaria p {
+  margin-top: 20px;
+  max-width: 25ch;
+}
+
+.sobre-tipos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulos_tipos {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.titulos_tipos .sub {
+  margin: 0 !important;
+  font-size: 18px;
+}
+.titulos_tipos .titulo {
+  margin: 0;
+  font-size: 120px;
+  line-height: 0.9;
+}
+.sobre-tipos p {
+  margin-left: -40px;
+}
+
+.padaria-fermentacao p {
+  font-size: 18px;
+  max-width: 35ch;
+}
+
+@media (max-width: 840px) {
+  .content-hero-padaria .titulo {
+    line-height: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .content-hero-padaria {
+    padding-left: 0;
+  }
+  .content-hero-padaria .titulo {
+    color: #fff;
+  }
+}
+@media (max-width: 426px) {
+  .titulos_tipos .titulo {
+    font-size: 62px;
+  }
+}
