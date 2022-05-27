@@ -1,0 +1,8 @@
+@import url(home.css);
+.cestas .comidas {
+  bottom: 0 !important;
+}
+.cestas .titulo {
+  margin-bottom: 40px !important;
+}
+ 

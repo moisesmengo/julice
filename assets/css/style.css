@@ -130,6 +130,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 200;
   left: 0;
 }
 
@@ -235,7 +236,7 @@ footer span {
   header {
     height: 90px !important;
     background: #c5043c;
-    z-index: 100;
+    z-index: 300 !important;
   }
   .conteudo-mobile {
     display: block !important;
